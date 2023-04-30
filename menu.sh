@@ -116,12 +116,14 @@ clear
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m         °SCRIPT PREMIUM BY CyberVPN°          \E[0m"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "□ Server Uptime       = $( uptime -p  | cut -d " " -f 2-10000 ) "
+ 
 echo -e "• Current Time        = $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo -e "• Current Domain      = $( cat /etc/xray/domain )"
 echo -e "• Server IP           = $MYIP"
 echo -e "• ISP                 = $(cat /root/.isp)${NC}"
 echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
-  
+
 echo -e "• Status Hari ini     = $(cat /root/status)${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
