@@ -121,8 +121,8 @@ echo -e "• Current Domain      = $( cat /etc/xray/domain )"
 echo -e "• Server IP           = $MYIP"
 echo -e "• ISP                 = $(cat /root/.isp)${NC}"
 echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
-echo -e "• Clients Name        = $Name"
-echo -e "• Expired Script VPS  = $Exp"
+
+  
 echo -e "• Status Hari ini     = $(cat /root/status)${NC}"
 echo -e ""
 echo -e "$GREEN┌────────────────────────────────────────────────────┐${NC}"
@@ -136,7 +136,6 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
-echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}SSH & OVPN MENU $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}MENU L2TP & PPTP [ IPSEC ]$NC"
 echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}VMESS MENU      $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
@@ -144,7 +143,12 @@ echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}VLESS MENU      $
 echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}TROJAN MENU     $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}SETTING $NC"
 echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}CEKING UPDATE  $NC" 
 echo -e " ${GREEN}"
-echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
+echo -e "${GREEN}│ ${BOLD}${COLOR1}Client  = $Name                           │${NC}"
+echo -e "${GREEN}│ ${BOLD}${COLOR1}Expired = $Exp                            │${NC}"
+echo -e "${GREEN}│ ${BOLD}${COLOR1}Expired = AZIGANS                         │${NC}"
+
+echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
 echo
 read -p " Select menu : " opt
