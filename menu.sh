@@ -144,9 +144,9 @@ echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}TROJAN MENU     $
 echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}CEKING UPDATE  $NC" 
 echo -e " ${GREEN}"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${GREEN}│ ${BOLD}${COLOR1}Client  = $Name                           │${NC}"
-echo -e "${GREEN}│ ${BOLD}${COLOR1}Expired = $Exp                            │${NC}"
-echo -e "${GREEN}│ ${BOLD}${COLOR1}Expired = AZIGANS                         │${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Client  = $Name                           │${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired = $Exp                            │${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired = AZIGANS                          │${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
