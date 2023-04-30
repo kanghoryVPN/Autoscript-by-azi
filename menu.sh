@@ -121,10 +121,11 @@ echo -e "• Current Domain      = $( cat /etc/xray/domain )"
 echo -e "• Server IP           = $MYIP"
 echo -e "• ISP                 = $(cat /root/.isp)${NC}"
 echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
-echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-
   
 echo -e "• Status Hari ini     = $(cat /root/status)${NC}"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+
 echo -e ""
 echo -e "$GREEN┌────────────────────────────────────────────────────┐${NC}"
 echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${GREEN}ON ${NC}]  [ NGINX${NC}: ${status_nginx} ] ${COLOR2}[ Today  : $ttoday ]"
