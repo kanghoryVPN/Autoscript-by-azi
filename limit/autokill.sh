@@ -35,7 +35,7 @@ fi
 clear
 echo -e ""
 echo -e "${PURPLE}=================================="
-echo -e "${LIGHT}     Status Auto Banned $sts       "
+echo -e "${LIGHT}     Status Auto Banned $RED OFF       "
 echo -e "${PURPLE}=================================="
 echo -e "${LIGHT}"
 echo -e "1. Auto Banned After 5 Minutes"
