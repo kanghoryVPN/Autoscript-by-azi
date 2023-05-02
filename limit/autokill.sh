@@ -35,16 +35,18 @@ fi
 clear
 echo -e ""
 echo -e "${PURPLE}=================================="
-echo -e "${LIGHT}     Status Autokill $sts       "
+echo -e "${LIGHT}     Status Auto Banned $sts       "
 echo -e "${PURPLE}=================================="
-echo -e "${LIGHT}
-echo -e "1. AutoKill After 5 Minutes"
-echo -e "2. AutoKill After 10 Minutes"
-echo -e "3. AutoKill After 15 Minutes"
-echo -e "4. Turn Off AutoKill/MultiLogin"
+echo -e "${LIGHT}"
+echo -e "1. Auto Banned After 5 Minutes"
+echo -e "2. Auto Banned After 10 Minutes"
+echo -e "3. Auto Banned After 15 Minutes"
+echo -e "4. Turn Off Auto Banned/MultiLogin"
 echo -e "5. Exit"
-echo -e "${PURPLE}=================================="                                                                                                          
-echo -e ""
+echo -e "${PURPLE}======================================"
+                echo -e "${LIGHT}       Auto banned By CyberVPN"
+                echo -e "${PURPLE}======================================"                                                                                                                                 
+                echo -e ""
 read -p "Select From Options [1-4 or x] :  " AutoKill
 read -p "Multilogin Maximum Number Of Allowed: " max
 echo -e ""
@@ -59,9 +61,11 @@ case $AutoKill in
                 echo -e ""
                 echo -e "${PURPLE}======================================"
                 echo -e ""
-                echo -e "${LIGHT}     Allowed MultiLogin : $max"
-                echo -e "      AutoKill Every     : 5 Minutes"      
+                echo -e "${LIGHT}     Allowed IP: $max"
+                echo -e "      Auto Banned Every     : 5 Minutes"      
                 echo -e ""
+                echo -e "${PURPLE}======================================"
+                echo -e "${LIGHT}       Auto banned By CyberVPN"
                 echo -e "${PURPLE}======================================"                                                                                                                                 
                 exit                                                                  
                 ;;
@@ -75,11 +79,13 @@ case $AutoKill in
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
 echo -e ""
-                echo -e " ${LIGHT}     Allowed MultiLogin : $max"
-                echo -e "      AutoKill Every     : 10 Minutes"
+                echo -e " ${LIGHT}     Allowed IP: $max"
+                echo -e "      Auto Banned Every     : 10 Minutes"
                 echo -e ""
-                echo -e "${PURPLE}=================================="                                                                                                          
-  exit
+                echo -e "${PURPLE}======================================"
+                echo -e "${LIGHT}       Auto banned By CyberVPN"
+                echo -e "${PURPLE}======================================"                                                                                                                                 
+                exit
                 ;;
                 3)
                 echo -e ""
@@ -91,11 +97,13 @@ echo -e ""
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
 echo -e ""
-                echo -e "${LIGHT}      Allowed MultiLogin : $max"
-                echo -e "      AutoKill Every     : 15 Minutes"
+                echo -e "${LIGHT}      Allowed IP : $max"
+                echo -e "      Auto Banned Every     : 15 Minutes"
                 echo -e ""
-                echo -e "${PURPLE}=================================="                                                                                                          
- exit
+                echo -e "${PURPLE}======================================"
+                echo -e "${LIGHT}       Auto banned By CyberVPN"
+                echo -e "${PURPLE}======================================"                                                                                                                                 
+                 exit
                 ;;
                 4)
                 clear
@@ -103,10 +111,12 @@ echo -e ""
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
   echo -e ""
-                echo -e "${LIGHT}      AutoKill MultiLogin Turned Off  "
+                echo -e "${LIGHT}      Auto Banned MultiLogin Turned $sts  "
                 echo -e ""
-                echo -e "${PURPLE}=================================="                                                                                                          
-   exit
+                echo -e "${PURPLE}======================================"
+                echo -e "${LIGHT}       Auto banned By CyberVPN"
+                echo -e "${PURPLE}======================================"                                                                                                                                 
+                   exit
                 ;;
                 x)
                 clear
