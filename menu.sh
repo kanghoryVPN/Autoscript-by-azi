@@ -130,7 +130,7 @@ echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━
 
 echo -e ""
 echo -e "$GREEN┌────────────────────────────────────────────────────┐${NC}"
-echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${GREEN}ON ${NC}]  [ NGINX${NC}: ${status_nginx} ] ${COLOR2}[ Today  : $ttoday ]"
+echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${status_xray} ${NC}]  [ NGINX${NC}: ${status_nginx} ] ${COLOR2}[ Today  : $ttoday ]"
 echo -e " [ XRAY${NC}         : ${status_xray} ]                ${COLOR2}[ Monthly: $tmon ]"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1"
