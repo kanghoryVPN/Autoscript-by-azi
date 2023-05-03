@@ -143,7 +143,7 @@ echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
 echo -e ""
 echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}SSH & OVPN MENU $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}MENU L2TP & PPTP [ IPSEC ]$NC"
 echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}VMESS MENU      $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
-echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}VLESS MENU      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN}TEMA VPS $NC"
+echo -e " ${CYAN}[${BIWhite}03${BICyan}]${RED} •${NC} ${CYAN}VLESS MENU      $NC  ${CYAN}[${BIWhite}08${BICyan}]${RED} • ${NC}${CYAN} SSH UDP $NC"
 echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}TROJAN MENU     $NC  ${CYAN}[${BIWhite}09${BICyan}]${RED} • ${NC}${CYAN}SETTING $NC"
 echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}CEKING UPDATE  $NC" 
 echo -e " ${GREEN}"
@@ -165,7 +165,7 @@ case $opt in
 05 | 5) clear ; menu-ss ;;
 06 | 6) clear ; menu-ipsec ;;
 07 | 7) clear ; running ;;
-08 | 8) clear ;  bash thema.sh ;;
+08 | 8) clear ;  udp ;;
 09 | 9) clear ; setting ;;
 10) clear ; updatsc ;;
 
