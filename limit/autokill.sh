@@ -94,12 +94,12 @@ echo -e ""
                 clear
                 echo > /etc/cron.d/tendang
                 echo "# Autokill" >>/etc/cron.d/tendang
-                echo "*/15 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
+                echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
 echo -e ""
                 echo -e "${LIGHT}     Allowed IP : $max"
-                echo -e "      Auto Banned Every     : 15 Minutes"
+                echo -e "      Auto Banned Every     : 120 Minutes"
                 echo -e ""
                 echo -e "${PURPLE}======================================"
                 echo -e "${LIGHT}       Auto banned By CyberVPN"
