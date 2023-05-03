@@ -158,33 +158,7 @@ echo -e ""
 read -n 1 -s -r -p "  Press any key to back on menu"
 menu-ssh
 }
-function sshwss(){
-    clear
-portdb=`cat ~/log-install.txt | grep -w "Dropbear" | cut -d: -f2|sed 's/ //g' | cut -f2 -d","`
-portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
-if [ -f "/etc/systemd/system/sshws.service" ]; then
-clear
-else
-wget -q -O /usr/bin/proxy3.js "https://raw.githubusercontent.com/Vlukss/multi-ws/main/ssh/proxy3.js"
-cat <<EOF > /etc/systemd/system/sshws.service
-[Unit]
-Description=WSenabler
-Documentation=https://ARH-PROJECT.MY.ID
 
-[Service]
-Type=simple
-ExecStart=/usr/bin/ssh-wsenabler
-KillMode=process
-Restart=on-failure
-RestartSec=1s
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-fi
-
-function start() {
         clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}               • WEBSOCKET MENU •              ${NC} $COLOR1│$NC"
@@ -228,36 +202,8 @@ read -n 1 -s -r -p "  Press any key to back on menu"
 sshwss 
 }
 
-clear
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}               • WEBSOCKET MENU •              ${NC} $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
-if [[ ! -z "${PID}" ]]; then
-echo -e "$COLOR1│$NC   • Websocket Is ${COLOR1}Running$NC"
-else
-echo -e "$COLOR1│$NC   • Websocket Is ${red}Not Running$NC"
-fi
-echo -e "$COLOR1│$NC"  
-echo -e "$COLOR1│$NC   ${COLOR1}[01]${NC} • Enable SSH WS   ${COLOR1}[02]${NC} • Disable SSH WS"
-echo -e "$COLOR1│$NC"  
-echo -e "$COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
-echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
-echo ""
-read -p " Select menu :  "  opt
-echo -e ""
-case $opt in
-01 | 1) clear ; start ;;
-02 | 2) clear ; stop ;;
-00 | 0) clear ; menu ;;
-*) clear ; menu-set ;;
-esac
-}
-function cekssh(){
+
+
 
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -568,7 +514,7 @@ echo -e " $COLOR1┌────────────────────
  $COLOR1│$NC   ${COLOR1}[01]${NC} • ADD SSH         ${COLOR1}[05]${NC} • DELETE SSH${NC}    $COLOR1│$NC
  $COLOR1│$NC   ${COLOR1}[02]${NC} • TRIAL SSH       ${COLOR1}[06]${NC} • RENEW SSH${NC}     $COLOR1│$NC
  $COLOR1│$NC   ${COLOR1}[03]${NC} • USER ONLINE     ${COLOR1}[07]${NC} • USERS LIST${NC}    $COLOR1│$NC
- $COLOR1│$NC   ${COLOR1}[04]${NC} • ENABLE WS                            $COLOR1│$NC
+ $COLOR1│$NC   ${COLOR1}[04]${NC} • Unlock account                          $COLOR1│$NC
  $COLOR1│$NC                                              ${NC} $COLOR1│$NC
  $COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              $COLOR1│$NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}" 
@@ -582,7 +528,7 @@ case $opt in
 01 | 1) clear ; usernew ;;
 02 | 2) clear ; trialssh ;;
 03 | 3) clear ; cekssh ;;
-04 | 4) clear ; sshwss ;;
+04 | 4) clear ; unlock ;;
 05 | 5) clear ; delssh ;;
 06 | 6) clear ; renewssh ;;
 07 | 7) clear ; memberssh ;;
