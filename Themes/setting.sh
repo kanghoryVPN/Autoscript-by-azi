@@ -66,7 +66,7 @@ echo
 echo "[1].Add Host"
 echo "[2].Renew Cert"
 echo "[3].Free domain DNS"
-echo "[4].limit speed"
+echo "[4].tema vps"
 echo "[5].speedtest"
 echo "[6].kill all proces"
 echo "[7].clear log"
@@ -103,7 +103,7 @@ fi
 if [ $bro = 4 ] || [ $bro = 4 ]
 then
 clear
-limitspeed
+bash thema.sh
 fi
 if [ $bro = 5 ] || [ $bro = 5 ]
 then
@@ -142,7 +142,7 @@ fi
 if [ $bro = 11 ] || [ $bro = 11 ]
 then
 clear
-tendang
+autokill
 fi
 if [ $bro = 12 ] || [ $bro = 12 ]
 then
@@ -181,7 +181,7 @@ fi
 if [ $bro = 19 ] || [ $bro = 19 ]
 then
 clear
-neofetch
+figlet -f 3d "CyberVPN" | lolcat
 echo -e "${yellow}"
 cat /root/log-install.txt
 echo "--------------------------------------------------------------"
