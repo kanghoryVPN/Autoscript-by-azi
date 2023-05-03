@@ -192,8 +192,8 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" 
 wget -q -O /usr/bin/ssh-wsenabler "https://raw.githubusercontent.com/Vlukss/multi-ws/main/ssh/sshws-true.sh" && chmod +x /usr/bin/ssh-wsenabler
 systemctl daemon-reload >/dev/null 2>&1
-systemctl enable sshws.service >/dev/null 2>&1
-systemctl start sshws.service >/dev/null 2>&1
+systemctl enable ws-dropbear.service >/dev/null 2>&1
+systemctl start ws-dropbear.service >/dev/null 2>&1
 sed -i "/SSH Websocket/c\   - SSH Websocket           : $portsshws [ON]" /root/log-install.txt
 echo -e "$COLOR1│${NC}  [INFO] • ${green}SSH Websocket Started${NC}"
 echo -e "$COLOR1│${NC}  [INFO] • Restart is require for Changes"
