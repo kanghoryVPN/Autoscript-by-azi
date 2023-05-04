@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
 NC="\e[0m"
 RED="\033[0;31m" 
-COLOR1='\e[1;32m' 
+COLOR1='\033[0;32m' 
 
  
 ###########- END COLOR CODE -##########
