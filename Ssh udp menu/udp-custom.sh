@@ -12,7 +12,7 @@ wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com
 chmod +x /root/udp/udp-custom
 
 echo downloading default config
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Ikj8IATsQWWiGqSkkxeDgx1S5jPKGtfy' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Ikj8IATsQWWiGqSkkxeDgx1S5jPKGtfy" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://raw.githubusercontent.com/FighterTunnel/ssh/main/bin/config.json' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Ikj8IATsQWWiGqSkkxeDgx1S5jPKGtfy" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
 chmod 644 /root/udp/config.json
 
 if [ -z "$1" ]; then
