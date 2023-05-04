@@ -11,6 +11,7 @@ wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Azigaming404/Autoscr
 wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Themes/setting.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/menu/usernew.sh"
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/running.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/tes/menu-vmess.sh" && chmod 777 /usr/bin/menu-vmess
 #izin
 chmod 777 /usr/bin/usernew
 chmod 777 /usr/bin/menu
