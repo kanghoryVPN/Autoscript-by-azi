@@ -5,11 +5,15 @@
 sudo apt install squid -y
 mkdir /var/lib/ssnvpn-pro/
 wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/ipvps.conf"
-chmod +x /usr/bin/delv2ray
+wger -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/limit/tendang.sh"
+wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/limit/autokill.sh"
+
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/menu/restart.sh"
 chmod +x /usr/bin/restart
 wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Ssh%20udp%20menu/addssh.sh"
 chmod +x /usr/bin/udp
+chmod +x /usr/bin/tendang
+chmod +x /usr/bin/autokill
 #setting IPtables
 iptables -I INPUT -p udp --dport 5300 -j ACCEPT
 iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5300
