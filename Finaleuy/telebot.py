@@ -1,7 +1,7 @@
 import TeleBot
 import subprocess
 print "start"
-subprocess.call("sleep.sh")
+subprocess.call("usernew")
 print "end"
 
 api = '6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU'
