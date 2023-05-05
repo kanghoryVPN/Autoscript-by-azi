@@ -1,7 +1,7 @@
-import os
+
 import telebot
 import subprocess
-token = os.environ.get( 'tokenbot' )
+token = ( '6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU' )
 bot = telebot.TeleBot(token)
 rc = subprocess.call("neofetch")
 # Menghandle Pesan /start
