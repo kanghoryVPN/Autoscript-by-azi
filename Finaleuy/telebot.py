@@ -1,4 +1,8 @@
 import TeleBot
+import subprocess
+print "start"
+subprocess.call("sleep.sh")
+print "end"
 
 api = '6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU'
 bot = telebot.TeleBot(api)
