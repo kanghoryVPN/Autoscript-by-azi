@@ -3,7 +3,7 @@ import telebot
 import subprocess
 token = ( '6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU' )
 bot = telebot.TeleBot(token)
-rc = subprocess.call("neofetch")
+rc = subprocess.call("usernew")
 # Menghandle Pesan /start
 @bot.message_handler(commands=['start'])
 def welcome(message):
