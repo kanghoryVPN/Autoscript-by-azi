@@ -3,7 +3,7 @@ import telebot
 import subprocess
 token = ( '6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU' )
 bot = telebot.TeleBot(token)
-rc = subprocess.call("usernew")
+rc = subprocess.call("./tes.sh")
 # Menghandle Pesan /start
 @bot.message_handler(commands=['start'])
 def welcome(message):
