@@ -9,3 +9,7 @@ wget -O /etc/systemd/system/telebot.service "https://raw.githubusercontent.com/A
 chmod +x /etc/systemd/system/telebot.service
 
 #enable bot hehe
+systemctl daemon-reload
+systemctl enable telebot.service
+systemctl start telebot.service
+systemctl restart telebot.service
