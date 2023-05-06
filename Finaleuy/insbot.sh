@@ -4,4 +4,8 @@ wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/Azigaming404/Autoscri
 #izin bot
 chmod +x /usr/bin/bot
 # install server bot
-wget -O /etc/systemd/system/
+wget -O /etc/systemd/system/telebot.service "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Finaleuy/telebot.service"
+#izin server bot
+chmod +x /etc/systemd/system/telebot.service
+
+#enable bot
