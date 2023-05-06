@@ -5,71 +5,14 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 colornow=$(cat /etc/ssnvpn/theme/color.conf)
 NC="\e[0m"
 RED="\033[0;31m" 
-COLOR1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-COLBG1="$(cat /etc/ssnvpn/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"                    
+COLOR1='\033[0;32m'
 ###########- END COLOR CODE -##########
 
-BURIQ () {
-    curl -sS https://raw.githubusercontent.com/Vlukss/izinvps/main/ip > /root/tmp
-    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
-    for user in "${data[@]}"
-    do
-    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
-    d1=(`date -d "$exp" +%s`)
-    d2=(`date -d "$biji" +%s`)
-    exp2=$(( (d1 - d2) / 86400 ))
-    if [[ "$exp2" -le "0" ]]; then
-    echo $user > /etc/.$user.ini
-    else
-    rm -f /etc/.$user.ini > /dev/null 2>&1
-    fi
-    done
-    rm -f /root/tmp
+
+
 }
 
-MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/Vlukss/izinvps/main/ip | grep $MYIP | awk '{print $2}')
-echo $Name > /usr/local/etc/.$Name.ini
-CekOne=$(cat /usr/local/etc/.$Name.ini)
-
-Bloman () {
-if [ -f "/etc/.$Name.ini" ]; then
-CekTwo=$(cat /etc/.$Name.ini)
-    if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
-    fi
-else
-res="Permission Accepted..."
-fi
-}
-
-PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Vlukss/izinvps/main/ip | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "$IZIN" ]; then
-    Bloman
-    else
-    res="Permission Denied!"
-    fi
-    BURIQ
-}
-red='\e[1;31m'
-green='\e[1;32m'
-NC='\e[0m'
-green() { echo -e "\\033[32;1m${*}\\033[0m"; }
-red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-PERMISSION
-if [ -f /home/needupdate ]; then
-red "Your script need to update first !"
-exit 0
-elif [ "$res" = "Permission Accepted..." ]; then
-echo -ne
-else
-red "Permission Denied!"
-exit 0
-fi
-
-
+PERMISSION () {yg
 function cektrojan(){
 clear
 echo -n > /tmp/other.txt
@@ -114,7 +57,7 @@ done
 rm -rf /tmp/other.txt
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -133,7 +76,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  • You Dont have any existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -167,7 +110,7 @@ echo -e "$COLOR1│${NC}   • Client Name : $user"
 echo -e "$COLOR1│${NC}   • Expired On  : $exp"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • Vluks Store •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • CyberVPN •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -186,7 +129,7 @@ if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "$COLOR1│${NC}  • You have no existing clients!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}              • Vluks Store •            $COLOR1│$NC"
+echo -e "$COLOR1│${NC}              • CyberVPN •            $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -202,7 +145,7 @@ echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  • [NOTE] Press any key to back on menu"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
@@ -234,7 +177,7 @@ echo -e "$COLOR1│${NC}   Days Added  : $masaaktif Days"
 echo -e "$COLOR1│${NC}   Expired On  : $exp4"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -256,7 +199,7 @@ if [ -z $user ]; then
 echo -e "$COLOR1│${NC}   [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -272,7 +215,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC}  Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 read -n 1 -s -r -p "   Press any key to back on menu"
 trojan-menu
@@ -310,7 +253,7 @@ echo -e "$COLOR1 ${NC} Link GRPC : "
 echo -e "$COLOR1 ${NC} ${trojanlink1}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo "" 
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -329,7 +272,7 @@ echo -e " $COLOR1│$NC                                              ${NC} $COLO
 echo -e " $COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              $COLOR1│$NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                 • Vluks Store •                 $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                 • CyberVPN •                 $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 read -p " Select menu :  "  opt
