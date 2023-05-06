@@ -8,4 +8,4 @@ wget -O /etc/systemd/system/telebot.service "https://raw.githubusercontent.com/A
 #izin server bot
 chmod +x /etc/systemd/system/telebot.service
 
-#enable bot
+#enable bot hehe
