@@ -10,10 +10,9 @@ COLOR1='\033[0;32m'
 
 
 
-}
 
-PERMISSION () {yg
-function cektrojan(){
+
+
 clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq`);
