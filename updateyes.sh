@@ -13,11 +13,13 @@ wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/Azigaming404/Auto
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/menu/usernew.sh"
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/running.sh"
 wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Finaleuy/bot.sh"
+wget -q -O /root/chat "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Finaleuy/chatid.sh"
 #izin
 chmod 777 /usr/bin/usernew
 chmod 777 /usr/bin/menu
 chmod 777 /usr/bin/setting
 chmod 777 /usr/bin/autokill
 chmod 777 /usr/bin/bot
+chmod 777 /root/chat
 rm -rf updateyes.sh
 menu
