@@ -84,9 +84,6 @@ fi
                         pid[$i]="";
                         j=`expr $j + 1`;
                 fi
-		if [ ${jumlah[$i]} -gt $MAX ]; then
-		bot
-fi
 			done
         if [ $j -gt 0 ]; then
                 if [ $OS -eq 1 ]; then
