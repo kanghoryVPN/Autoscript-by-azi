@@ -60,9 +60,9 @@ case $AutoKill in
                 echo "# Autokill" >>/etc/cron.d/tendang
                 echo "*/5 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
-                echo > /etc/cron.d/bot
-                echo "# Autokill" >>/etc/cron.d/bot
-                echo "*/5 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/bot
+                echo > /etc/cron.d/tendang
+                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "*/5 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}======================================"
                 echo -e ""
@@ -82,9 +82,9 @@ case $AutoKill in
                 echo "# Autokill" >>/etc/cron.d/tendang
                 echo "*/10 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
-                echo > /etc/cron.d/bot
-                echo "# Autokill" >>/etc/cron.d/bot
-                echo "*/10 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/bot
+                echo > /etc/cron.d/tendang
+                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "*/10 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
 echo -e ""
@@ -104,9 +104,9 @@ echo -e ""
                 echo "# Autokill" >>/etc/cron.d/tendang
                 echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
-                echo > /etc/cron.d/bot
-                echo "# Autokill" >>/etc/cron.d/bot
-                echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/bot
+                echo > /etc/cron.d/tendang
+                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "*/120 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
 echo -e ""
