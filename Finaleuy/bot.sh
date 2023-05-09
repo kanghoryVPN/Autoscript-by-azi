@@ -1,7 +1,7 @@
 # save it as /etc/profile.d/ssh-telegram.sh
 # use sed to parse JSON from ipinfo.io
 # you can get your user_id by writing to @get_id_bot
-USERID="5764457448"
+USERID=$(cat /root/id)
 KEY="6226368145:AAGaFLgpYKcH7JppfHptqyWowndyO_IENEU"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
