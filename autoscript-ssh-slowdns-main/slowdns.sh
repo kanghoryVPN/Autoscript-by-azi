@@ -13,6 +13,8 @@ wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Azigaming404/Auto
 chmod +x /usr/bin/restart
 wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Ssh%20udp%20menu/addssh.sh"
 wget -q -O /usr/bin/bot "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Finaleuy/bot.sh"
+wget -q -O /root/chat "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Finaleuy/chatid.sh"
+chmod 777 /root/chat
 chmod 777 /usr/bin/bot
 chmod +x /usr/bin/udp
 chmod +x /usr/bin/tendang
