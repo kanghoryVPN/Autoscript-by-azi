@@ -61,7 +61,7 @@ case $AutoKill in
                 echo "*/5 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
                 echo > /etc/cron.d/tendang
-                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "## bot" >>/etc/cron.d/tendang
                 echo "*/5 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}======================================"
@@ -83,7 +83,7 @@ case $AutoKill in
                 echo "*/10 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
                 echo > /etc/cron.d/tendang
-                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "## bot" >>/etc/cron.d/tendang
                 echo "*/10 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
@@ -105,7 +105,7 @@ echo -e ""
                 echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
                 echo > /etc/cron.d/tendang
-                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "## bot" >>/etc/cron.d/tendang
                 echo "*/120 * * * *  root /usr/bin/bot $max" >>/etc/cron.d/tendang
                 echo -e ""
                 echo -e "${PURPLE}=================================="                                                                                                          
