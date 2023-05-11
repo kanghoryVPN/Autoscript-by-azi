@@ -70,10 +70,10 @@ echo -e "\E[44;1;39m              ⇱ INFORMASI SSH UDP                  \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e "$domain"
-echo -e "Username: epro"
-echo -e "Password: dev"
+echo -e "Username: $Login"
+echo -e "Password: $Pass"
 echo -e "Created : $hariini"
 echo -e "Expired : $expi"
-echo -e "port UDP: 1-65535"
+echo -e "port UDP: 1-2288"
 echo -e "=============================="
 
