@@ -384,26 +384,26 @@ menu
 }
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                         ⇱ SSH MENU  ⇲                         \E[0m"
+echo -e "\E[44;1;39m                         ⇱ SSH UDP MENU  ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Add Account SSH      "
-echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Delete Account SSH      "
-echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Renew Account SSH      "
-echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Cek User SSH     "
-echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Mullog SSH     "
+echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Add Account SSH UDP      "
+echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Delete Account SSH UDP     "
+echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Renew Account SSH UDL    "
+echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Cek User SSH UD    "
+echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Mullog SSH  UDP  "
 echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Del user Exp     "
-echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH    "
-echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
+echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH UDP   "
+echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH UDP"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ ZEASTORE TUNNELING ⇲                   \E[0m"
+echo -e "${LIGHT}                     ⇱ CyberVPN TUNNELING ⇲                   "
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
 case $opt in
-1) clear ; usernew ;;
+1) clear ; addudp ;;
 2) clear ; del ;;
 3) clear ; renew;;
 4) clear ; cek ;;
