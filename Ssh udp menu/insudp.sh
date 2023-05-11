@@ -22,3 +22,4 @@ echo -e "${GREEN}proses instalasi sedang berjalan..!!"
 sleep 1
 clear
 echo -e "${GREEN} MENDOWNLOAD ASET..!!!"
+wget -q -O /usr/bin/addudp "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Ssh%20udp%20menu/addssh.sh"
