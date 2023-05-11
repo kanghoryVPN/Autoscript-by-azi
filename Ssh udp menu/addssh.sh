@@ -48,7 +48,7 @@ cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m              ⇱ CREATE UDP ACCOUNT                 \E[0m"
+echo -e "\E[44;1;39m              ⇱ CREATE UDP ACCOUNT            \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 read -p "Username : " Login
