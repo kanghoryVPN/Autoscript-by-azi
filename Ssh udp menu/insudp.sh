@@ -18,5 +18,7 @@ export BOLD="\e[1m"
 
 figlet -f 3d "installing ssh udp" | lolcat
 echo "UDP SERVICE BY CYBERVPN" | lolcat
-echo "proses instalasi sedang berjalan..!!" | lolcat
+echo -e "${GREEN}proses instalasi sedang berjalan..!!"
 sleep 1
+clear
+echo -e "${GREEN} MENDOWNLOAD ASET..!!!"
