@@ -16,7 +16,6 @@ chmod 777 /usr/bin/usernew
 chmod 777 /usr/bin/menu
 chmod 777 /usr/bin/setting
 
-wget -q -O insudp.sh https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Ssh%20udp%20menu/insudp.sh && chmod +x insudp.sh && ./insudp.sh
 
 rm -rf updateyes.sh
 menu
