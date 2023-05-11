@@ -80,7 +80,7 @@ echo "[14].WEBMIN"
 echo "[15].Cek semua port"
 echo "[16].bot menu"
 echo "[17].Menu Backup"
-echo "[18].CREATE SSH UDP"
+echo "[18].cek user multilogin"
 echo "[19].About"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 read -p    "Pilih Nomor :" bro
@@ -175,7 +175,9 @@ menu-backup
 fi
 if [ $bro = 18 ] || [ $bro = 18 ]
 then
-udp
+clear
+figlet -f 3d "User yang melanggar"
+cat log-limit.txt
 fi
 
 if [ $bro = 19 ] || [ $bro = 19 ]
