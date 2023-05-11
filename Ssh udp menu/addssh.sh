@@ -69,11 +69,12 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m              ⇱ INFORMASI SSH UDP                  \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "$domain"
+echo -e "Domain  :$domain"
 echo -e "Username: $Login"
 echo -e "Password: $Pass"
 echo -e "Created : $hariini"
 echo -e "Expired : $expi"
 echo -e "port UDP: 1-2288"
-echo -e "=============================="
-
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${ungu}                SSH UDP BY CyberVPN"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
