@@ -193,6 +193,4 @@ echo "--------------------------------------------------------------"
 fi
 
 
-read -n 1 -s -r -p "Press any key to back on menu"
-
-menu
+read -n 1 -s -r -p "Press [ Enter ] to back menu ()"
