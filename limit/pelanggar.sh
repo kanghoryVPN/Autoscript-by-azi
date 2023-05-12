@@ -1,3 +1,4 @@
+clear
 Figlet -f "User yang melanggar" | lolcat
 cat log-limit.txt
 
