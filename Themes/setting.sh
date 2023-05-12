@@ -86,111 +86,30 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 read -p    "Pilih Nomor :" bro
 
 
-if [ $bro = 1 ] || [ $bro = 1 ]
-then
-addhost
-fi
-if [ $bro = 2 ] || [ $bro = 2 ]
-then
-clear
-genssl
-fi
-if [ $bro = 3 ] || [ $bro = 3 ]
-then
-clear
-fix
-fi
-if [ $bro = 4 ] || [ $bro = 4 ]
-then
-clear
-bash thema.sh
-fi
-if [ $bro = 5 ] || [ $bro = 5 ]
-then
-clear
-cek-speed
-fi
-if [ $bro = 6 ] || [ $bro = 6 ]
-then
-clear
-echo "kill all proces in your cpu"
-killall /bin/bash /usr/bin/menu
-fi
-if [ $bro = 7 ] || [ $bro = 7 ]
-then
-clear
-clearlog
-fi
-if [ $bro = 8 ] || [ $bro = 8 ]
-then
-clear
-echo "Bobo dulu ye guys" | lolcat
-sleep 2
-reboot
-fi
-if [ $bro = 9 ] || [ $bro = 9 ]
-then
-clear
-autoreboot
-fi
-if [ $bro = 10 ] || [ $bro = 10 ]
-then
-clear
-nano /etc/issue.net
-fi
+case $opt in
+01 | 1) clear ; addhost ;;
+02 | 2) clear ; genssl ;;
+03 | 3) clear ; fix ;;
+04 | 4) clear ; bash thema.sh ;;
+05 | 5) clear ; cek-speed ;;
+06 | 6) clear ; killall /bin/bash /usr/bin/menu ;;
+07 | 7) clear ; clearlog ;;
+08 | 8) clear ;  reboot ;;
+09 | 9) clear ; autoreboot ;;
+10) clear ; nano /etc/issue.net ;;
+11) clear ; autokill ;;
+12) clear ; limitspeed ;;
+13) clear ; restart ;;
+14) clear ; wbm ;;
+15) clear ; netstat -tnlp ;;
+16) clear ; bash /root/chat ;;
+17) clear ; menu-backup ;;
+18) clear ; pelanggar ;;
+19) clear ; info ;; 
 
-if [ $bro = 11 ] || [ $bro = 11 ]
-then
-clear
-autokill
-fi
-if [ $bro = 12 ] || [ $bro = 12 ]
-then
-clear
-limitspeed
-fi
-if [ $bro = 13 ] || [ $bro = 13 ]
-then
-clear
-restart
-fi
-if [ $bro = 14 ] || [ $bro = 14 ]
-then
-clear
-wbm
-fi
-if [ $bro = 15 ] || [ $bro = 15 ]
-then
-clear
-netstat -tnlp
-fi
-if [ $bro = 16 ] || [ $bro = 16 ]
-then
-clear
-bash /root/chat
-fi
-if [ $bro = 17 ] || [ $bro = 17 ]
-then
-menu-backup
-fi
-if [ $bro = 18 ] || [ $bro = 18 ]
-then
-clear
-figlet -f 3d "User yang melanggar"
-cat log-limit.txt
-fi
-
-if [ $bro = 19 ] || [ $bro = 19 ]
-then
-clear
-figlet -f 3d "CyberVPN" | lolcat
-echo -e "${yellow}"
-cat /root/log-install.txt
-echo "--------------------------------------------------------------"
-echo "                Terimakasih sudah menggunakan" 
-echo "                   script premium CyberVPN"
-echo "--------------------------------------------------------------"
-fi
+100) clear ; $up2u ;;
+00 | 0) clear ; menu ;;
+*) clear ; menu ;;
+esac
 
 
-read -n 1 -s -r -p "Press [ Enter ] to back menu ()"
