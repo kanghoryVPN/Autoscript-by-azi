@@ -1,5 +1,5 @@
 clear
-Figlet -f "User yang melanggar" | lolcat
+figlet -f 3d "User yang melanggar" | lolcat
 cat log-limit.txt
 
 echo "==============================================" | lolcat
