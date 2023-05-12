@@ -86,7 +86,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 read -p    "Pilih Nomor :" bro
 
 
-case $opt in
+case $bro in
 01 | 1) clear ; addhost ;;
 02 | 2) clear ; genssl ;;
 03 | 3) clear ; fix ;;
