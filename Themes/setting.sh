@@ -105,7 +105,7 @@ case $bro in
 16) clear ; bash /root/chat ;;
 17) clear ; menu-backup ;;
 18) clear ; pelanggar ;;
-19) clear ; info ;; 
+19) clear ; infosc ;; 
 
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
