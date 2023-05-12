@@ -1,3 +1,4 @@
+clear
 figlet -f 3d "CyberVPN Tunneling" | lolcat
 cat /root/log-install.txt
 echo "-----------------------------------------------------"
