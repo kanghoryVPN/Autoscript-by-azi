@@ -191,3 +191,8 @@ echo "                Terimakasih sudah menggunakan"
 echo "                   script premium CyberVPN"
 echo "--------------------------------------------------------------"
 fi
+
+
+read -n 1 -s -r -p "Press any key to back on menu"
+
+menu
