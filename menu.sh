@@ -137,15 +137,15 @@ echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
 
 
 echo -e ""
-echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
+echo -e "$GREEN┌────────────────────────────────┐${NC}"
 echo -e " ${YELLOW}• SSH WebSocket${NC}: [${status_ssh}]"
 echo -e " ${YELLOW}• XRAY${NC}         : [${status_xray}]"
 echo -e " ${YELLOW}• NGINX ${NC}       : [${status_nginx}]"
-echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
+echo -e "$GREEN└────────────────────────────────┘${NC}"
 echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
 
-echo -e " ${YELLOW}• Today${NC}  : [$ttoday]"
-echo -e " ${YELLOW}• Monthly${NC}: [$tmon]"
+echo -e " ${YELLOW}• Today${NC}  : [$ttoday] ${YELLOW}• Monthly${NC}: [$tmon]"
+
 echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
 
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
