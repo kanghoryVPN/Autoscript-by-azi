@@ -144,8 +144,8 @@ echo -e " ${YELLOW}• NGINX ${NC}       : [${status_nginx}]"
 echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
 echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
 
-echo - e " ${YELLOW}• Today${NC}  : [$ttoday]"
-echo - e " ${YELLOW}• Monthly${NC}: [$tmon]"
+echo -e " ${YELLOW}• Today${NC}  : [$ttoday]"
+echo -e " ${YELLOW}• Monthly${NC}: [$tmon]"
 echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
 
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
