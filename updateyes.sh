@@ -11,6 +11,7 @@ wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Azigaming404/Autoscr
 wget -q -O /usr/bin/setting "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/Themes/setting.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/menu/usernew.sh"
 wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/limit/autokill.sh"
+echo "*/3 * * * * root bot" >> /etc/crontab
 #izin
 chmod 777 /usr/bin/usernew
 chmod 777 /usr/bin/menu
