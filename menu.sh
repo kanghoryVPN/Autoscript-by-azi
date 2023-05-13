@@ -165,7 +165,7 @@ echo -e "${GREEN}┌────────────────────
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired   = $Exp                            ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Developer = AZIGANS💯                         ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Version = 3.0.0 LTS                         ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Version   = 3.0.0 LTS                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
 
