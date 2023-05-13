@@ -134,6 +134,12 @@ echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
 echo -e "• Status Hari ini     = $(cat /root/status)${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
+echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
+
+echo -e " ${YELLOW}• Today${NC}  : [$ttoday] ${YELLOW}• Monthly${NC}: [$tmon]"
+
+echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
+
 
 
 echo -e ""
@@ -142,12 +148,6 @@ echo -e " ${YELLOW}• SSH WebSocket${NC}: [${status_ssh}]"
 echo -e " ${YELLOW}• XRAY${NC}         : [${status_xray}]"
 echo -e " ${YELLOW}• NGINX ${NC}       : [${status_nginx}]"
 echo -e "$GREEN└────────────────────────────────┘${NC}"
-echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
-
-echo -e " ${YELLOW}• Today${NC}  : [$ttoday] ${YELLOW}• Monthly${NC}: [$tmon]"
-
-echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
-
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1"
 echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC"
