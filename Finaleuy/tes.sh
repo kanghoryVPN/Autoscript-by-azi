@@ -10,4 +10,4 @@ DATE_EXEC="$(date "+%d %b %Y %H:%M")"
 CITY=$(cat $TMPFILE | jq '.city' | sed 's/"//g')
 REGION=$(cat $TMPFILE | jq '.region' | sed 's/"//g')
 COUNTRY=$(cat $TMPFILE | jq '.country' | sed 's/"//g')
-curl -s --max-time  -d chat_id="$chatid" -d text="$IPVPS domain $domain telah install XrayCol pada $DATE_EXEC di $CITY, $REGION via $ORG""https://api.telegram.org/bot$token/sendMessage" > /dev/null 2>&1
+curl -s --max-time  -d chat_id="$chatid" -d text="$IPVPS domain $domain telah install XrayCol pada $DATE_EXEC di $CITY, $REGION via $ORG" https://api.telegram.org/bot$token/sendMessage > /dev/null 2>&1
