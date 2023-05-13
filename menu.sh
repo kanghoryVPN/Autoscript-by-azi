@@ -101,13 +101,20 @@ if [[ $nginx == "running" ]]; then
 else
     status_nginx="${RED}OFF${NC}"
 fi
-
-# // SSH Websocket Proxy
-xray=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+# // 
+xray=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $xray == "running" ]]; then
     status_xray="${GREEN}ON${NC}"
 else
     status_xray="${RED}OFF${NC}"
+fi
+
+# // SSH Websocket Proxy
+ssh=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+if [[ $xray == "running" ]]; then
+    status_ssh="${GREEN}ON${NC}"
+else
+    status_ssh="${RED}OFF${NC}"
 fi
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
@@ -126,12 +133,18 @@ echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
 
 echo -e "• Status Hari ini     = $(cat /root/status)${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
 
 
 echo -e ""
-echo -e "$GREEN┌────────────────────────────────────────────────────┐${NC}"
-echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${status_xray} ${NC}]  [ NGINX${NC}: ${status_nginx} ] ${COLOR2}[ Today  : $ttoday ]"
-echo -e " [ XRAY${NC}         : ${status_xray} ]                ${COLOR2}[ Monthly: $tmon ]"
+echo -e "$GREEN┌──────────────────────────────────────────────────┐${NC}"
+echo -e " ${COLOR2}[ SSH WebSocket${NC}: ${status_ssh}  ]"
+echo -e " ${COLOR2}[ XRAY${NC}         : ${status_xray} ]"
+echo -e " ${COLOR2}[ NGINX ${NC}       : ${status_nginx}]"
+echo - e "${COLOR2}[ Today  : $ttoday ]"
+echo - e "${COLOR2}[ Monthly: $tmon ]"
+echo -e "$GREEN└──────────────────────────────────────────────────┘${NC}"
+
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN       SHADOWSOCKS$NC  $COLOR1"
 echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC"
@@ -139,7 +152,6 @@ echo -e "${GREEN}└────────────────────
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "\E[39;1;92m                ⇱ MENU SERVICE ⇲                \E[0m"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${CYAN}                    🦊V.3.0.0 LTS🦊"
 echo -e ""
 echo -e " ${CYAN}[${BIWhite}01${BICyan}]${RED} •${NC} ${CYAN}SSH & OVPN MENU $NC  ${CYAN}[${BIWhite}06${BICyan}]${RED} • ${NC}${CYAN}MENU L2TP & PPTP [ IPSEC ]$NC"
 echo -e " ${CYAN}[${BIWhite}02${BICyan}]${RED} •${NC} ${CYAN}VMESS MENU      $NC  ${CYAN}[${BIWhite}07${BICyan}]${RED} • ${NC}${CYAN}INFO RUNNING $NC"
@@ -148,8 +160,8 @@ echo -e " ${CYAN}[${BIWhite}04${BICyan}]${RED} •${NC} ${CYAN}TROJAN MENU     $
 echo -e " ${CYAN}[${BIWhite}05${BICyan}]${RED} •${NC} ${CYAN}S-SOCK MENU     $NC  ${CYAN}[${BIWhite}10${BICyan}]${RED} • ${NC}${CYAN}CEKING UPDATE  $NC" 
 echo -e " ${GREEN}"
 echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Client  = $Name                           ${NC}"
-echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired = $Exp                            ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
+echo -e "${GREEN}│ ${BOLD}${LIGHT}Expired   = $Exp                            ${NC}"
 echo -e "${GREEN}│ ${BOLD}${LIGHT}Developer = AZIGANS                         ${NC}"
 
 echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}"
