@@ -58,6 +58,11 @@ echo -e "${CYAN}"
 read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (Days): " masaaktif
+read -p "limit IP: " max
+echo > /etc/cron.d/tendang
+                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
+                
 
 IP=$(wget -qO- ipinfo.io/ip);
 ws="$(cat ~/log-install.txt | grep -w "Websocket TLS" | cut -d: -f2|sed 's/ //g')"
