@@ -60,7 +60,7 @@ read -p "Password : " Pass
 read -p "Expired (Days): " masaaktif
 read -p "limit IP: " max
 echo > /etc/cron.d/tendang
-                echo "# Autokill" >>/etc/cron.d/tendang
+                echo "# $Login" >>/etc/cron.d/tendang
                 echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
                 
 
