@@ -1,6 +1,9 @@
 #!/bin/bash
 # // config Data
 echo -e "${GREEN}Config Data${NC}"
+wget -q -O /usr/bin/infosc "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/limit/info.sh" && chmod +x /usr/bin/infosc
+wget -q -O /usr/bin/pelanggar "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/limit/pelanggar.sh" && chmod +x /usr/bin/pelanggar
+
 wget -q -O /root/status "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/statushariini"
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/menu.sh"
 wget -q -O /usr/bin/delv2ray "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/tes/delv2ray.sh"
