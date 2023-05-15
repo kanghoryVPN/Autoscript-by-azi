@@ -1,6 +1,6 @@
 # Autoscript SSH WEBSOCKET MULTIPORT 443 & 80
 
-## SLOWDNS ON
+’’html SLOWDNS ON
 ## SSH UDP ON
 
 ## For ubuntu 18.04 (minimal instalation) 
