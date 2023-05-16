@@ -45,20 +45,23 @@ exit 0
 fi
 
 # Getting
-
+Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
+hari="1"
+Pass="1"
+max="2"
 domain=$(cat /etc/xray/domain)
 sldomain=$(cat /root/nsdomain)
 cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                 ⇱ CREATE ACCOUNT ⇲            \E[0m"
+echo -e "\E[44;1;39m                 ⇱ TRIAL ACCOUNT ⇲            \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${CYAN}"
-read -p "Username : " Login
-read -p "Password : " Pass
-read -p "Expired (Days): " masaaktif
-read -p "limit IP: " max
+read -p "Username : " $Login
+read -p "Password : " $Pass
+read -p "Expired (Days): " $hari
+read -p "limit IP: " $max
 echo > /etc/cron.d/tendang
                 echo "# $Login" >>/etc/cron.d/tendang
                 echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
@@ -96,7 +99,7 @@ expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 clear
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                 ⇱ INFORMASI AKUN SSH ⇲            \E[0m"
+echo -e "\E[44;1;39m                 ⇱ TRIAL AKUN SSH ⇲            \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "${LIGHT}Username: $Login"
 echo -e "Password: $Pass"
