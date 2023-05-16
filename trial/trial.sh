@@ -46,7 +46,7 @@ fi
 
 # Getting
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
-hari="1"
+masaaktif="1"
 Pass="1"
 max="2"
 domain=$(cat /etc/xray/domain)
