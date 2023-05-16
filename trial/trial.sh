@@ -1,14 +1,14 @@
 #!/bin/bash
 
 IP=$(wget -qO- icanhazip.com);
-domain=$(cat /etc/v2ray/domain);
+domain=$(cat /etc/xray/domain);
 
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 hari="1"
 Pass="1"
 
 
-echo "Script AutoCreate Akun SSH dan OpenVPN Mod By PrinceNewbie"
+echo "Script AutoCreate Akun SSH dan OpenVPN by CyberVPN"
 sleep 3
 echo Ping Host
 echo Cek Hak Akses...
@@ -32,12 +32,12 @@ echo -e "Password          : $Pass"
 echo -e "==============================="
 echo -e "IP Server         : $IP"
 echo -e "Host              : $domain"
-echo -e "OpenSSH           : 22, 500, 40000"
-echo -e "Dropbear          : 143, 109, 50000"
-echo -e "SSH WS Python     : 100, 2021 , 2020"
-echo -e "SSH WS Python SSL : 2052, 2053 "
-echo -e "SSL/TLS           : 443, 777"
-echo -e "Port Squid        : 3128, 8080 (limit to IP SSH)" 
+echo -e "OpenSSH           : 22, 500, 40000 , 51443, 58080 "
+echo -e "Dropbear          : 143, 109, 50000, 69"
+echo -e "SSH WS Python     : 8080, 80"
+echo -e "SSH WS Python SSL : 443"
+echo -e "SSL/TLS           : 447, 777"
+echo -e "Port Squid        : 3128 " 
 echo -e "OpenVPN           : TCP 1194 http://$IP:81/client-tcp-1194.ovpn"
 echo -e "OpenVPN           : UDP 2200 http://$IP:81/client-udp-2200.ovpn"
 echo -e "OpenVPN           : SSL 992 http://$IP:81/client-tcp-ssl.ovpn"
@@ -46,4 +46,6 @@ echo -e "==============================="
 echo -e "Payload Websocket : GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "==============================="
 echo -e "Aktif Sampai   : $exp"
-echo -e "Script Mod by @PrinceNewbie"
+echo -e "Script by CyberVPN Tunneling"
+echo -e "==============================="
+
