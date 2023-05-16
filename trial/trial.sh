@@ -54,19 +54,19 @@ sldomain=$(cat /root/nsdomain)
 cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                 ⇱ TRIAL ACCOUNT ⇲            \E[0m"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "${CYAN}"
-read -p "Username : " $Login
-read -p "Password : " $Pass
-read -p "Expired (Days): " $hari
-read -p "limit IP: " $max
-echo > /etc/cron.d/tendang
-                echo "# $Login" >>/etc/cron.d/tendang
-                echo "*/120 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/tendang
-                
 
+echo "Script AutoCreate Akun SSH dan OpenVPN By CyberVPN"
+sleep 3
+echo Ping Host
+echo Cek Hak Akses...
+sleep 0.5
+echo Permission Accepted
+clear
+sleep 0.5
+echo Membuat Akun: $Login
+sleep 0.5
+echo Setting Password: $Pass
+sleep 0.5
 IP=$(wget -qO- ipinfo.io/ip);
 ws="$(cat ~/log-install.txt | grep -w "Websocket TLS" | cut -d: -f2|sed 's/ //g')"
 ws2="$(cat ~/log-install.txt | grep -w "Websocket None TLS" | cut -d: -f2|sed 's/ //g')"
