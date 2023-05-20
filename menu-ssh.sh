@@ -413,7 +413,7 @@ case $opt in
 6) clear ; autodel ;;
 7) clear ; autokill ;;
 8) clear ; member ;;
-9) clear ; trial ;;
+9) clear ; trialssh ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
