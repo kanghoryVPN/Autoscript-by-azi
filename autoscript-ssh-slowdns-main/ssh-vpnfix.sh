@@ -20,7 +20,7 @@ commonname=none
 email=agunxz@themoon.my,id
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/Insshws/password.txt"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/kanghoryVPN/Autoscript-by-azi/main/Insshws/password.txt"
 chmod +x /etc/pam.d/common-password
 
 # go to root
