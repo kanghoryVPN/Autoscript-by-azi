@@ -129,7 +129,7 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/configuration/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/kanghoryVPN/Autoscript-by-azi/main/configuration/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
